@@ -1,0 +1,327 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17500\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en" dir="ltr">\
+<head>\
+<meta charset="UTF-8" />\
+<meta name="viewport" content="width=device-width, initial-scale=1" />\
+<title>AgriSmart | Agriculture Made Smart</title>\
+<style>\
+  /* Basic reset and style */\
+  * \{ box-sizing: border-box; \}\
+  body \{\
+    font-family: Arial, sans-serif;\
+    margin: 0; padding: 0;\
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;\
+    background-size: cover;\
+    color: #1b3a1a;\
+  \}\
+  header \{\
+    background: rgba(46,125,50,0.9);\
+    padding: 10px 20px;\
+    color: white;\
+    display: flex;\
+    justify-content: space-between;\
+    align-items: center;\
+    position: sticky;\
+    top: 0;\
+    z-index: 1000;\
+  \}\
+  nav a \{\
+    color: white;\
+    margin: 0 10px;\
+    text-decoration: none;\
+    font-weight: bold;\
+    cursor: pointer;\
+  \}\
+  nav a.active, nav a:hover \{\
+    background: #a3d38a;\
+    color: #1b3a1a;\
+    padding: 5px 10px;\
+    border-radius: 5px;\
+  \}\
+  .welcome-text \{\
+    font-weight: bold;\
+  \}\
+  main \{\
+    background: rgba(255,255,255,0.95);\
+    max-width: 1000px;\
+    margin: 30px auto;\
+    padding: 20px;\
+    border-radius: 12px;\
+    min-height: 70vh;\
+  \}\
+  section \{\
+    display: none;\
+  \}\
+  section.active \{\
+    display: block;\
+  \}\
+  h2 \{\
+    color: #2e7d32;\
+    text-align: center;\
+  \}\
+  .grid \{\
+    display: flex;\
+    flex-wrap: wrap;\
+    gap: 20px;\
+    justify-content: center;\
+  \}\
+  .card \{\
+    background: #f7fff7;\
+    border-radius: 10px;\
+    padding: 15px;\
+    width: 220px;\
+    box-shadow: 0 0 10px #a3d38a99;\
+    text-align: center;\
+  \}\
+  .card img \{\
+    width: 100%;\
+    height: 140px;\
+    object-fit: cover;\
+    border-radius: 10px;\
+    margin-bottom: 10px;\
+  \}\
+  /* Form styling */\
+  form \{\
+    max-width: 400px;\
+    margin: 0 auto;\
+  \}\
+  label \{\
+    font-weight: bold;\
+    display: block;\
+    margin: 10px 0 5px;\
+  \}\
+  input \{\
+    width: 100%;\
+    padding: 8px;\
+    border-radius: 6px;\
+    border: 1.5px solid #a3d38a;\
+  \}\
+  button \{\
+    margin-top: 15px;\
+    padding: 12px;\
+    width: 100%;\
+    background: #4caf50;\
+    color: white;\
+    border: none;\
+    font-weight: bold;\
+    border-radius: 8px;\
+    cursor: pointer;\
+  \}\
+  button:hover \{\
+    background: #81c784;\
+  \}\
+  .message \{\
+    margin-top: 10px;\
+    text-align: center;\
+    font-weight: bold;\
+  \}\
+</style>\
+</head>\
+<body>\
+\
+<header>\
+  <nav>\
+    <a href="#" class="active" data-section="home">Home | \uc0\u1711 \u1726 \u1585 </a>\
+    <a href="#" data-section="tools">Agri Tools | \uc0\u1586 \u1585 \u1593 \u1740  \u1570 \u1604 \u1575 \u1578 </a>\
+    <a href="#" data-section="ai">AI Features | \uc0\u1605 \u1589 \u1606 \u1608 \u1593 \u1740  \u1584 \u1729 \u1575 \u1606 \u1578 </a>\
+    <a href="#" data-section="sell">Sell Crops | \uc0\u1601 \u1589 \u1604  \u1601 \u1585 \u1608 \u1582 \u1578  \u1705 \u1585 \u1740 \u1722 </a>\
+    <a href="#" data-section="about">About | \uc0\u1729 \u1605 \u1575 \u1585 \u1746  \u1576 \u1575 \u1585 \u1746  \u1605 \u1740 \u1722 </a>\
+  </nav>\
+  <div class="welcome-text">Welcome to AgriSmart | \uc0\u1575 \u1740 \u1711 \u1585 \u1740  \u1587 \u1605 \u1575 \u1585 \u1657  \u1605 \u1740 \u1722  \u1582 \u1608 \u1588  \u1570 \u1605 \u1583 \u1740 \u1583 </div>\
+</header>\
+\
+<main>\
+  <!-- Home / Seeds + Sign In -->\
+  <section id="home" class="active" tabindex="0">\
+    <h2>Popular Seeds & Prices | \uc0\u1605 \u1602 \u1576 \u1608 \u1604  \u1576 \u1740 \u1580  \u1575 \u1608 \u1585  \u1602 \u1740 \u1605 \u1578 \u1740 \u1722 </h2>\
+    <div class="grid">\
+      <div class="card">\
+        <img src="https://cdn.pixabay.com/photo/2016/03/27/20/55/wheat-1283500_1280.jpg" alt="Wheat" />\
+        <h3>Wheat | \uc0\u1711 \u1606 \u1583 \u1605 </h3>\
+        <p>Price: \uc0\u8360  4500 / quintal</p>\
+      </div>\
+      <div class="card">\
+        <img src="https://cdn.pixabay.com/photo/2017/07/31/16/36/rice-2555152_1280.jpg" alt="Rice" />\
+        <h3>Rice | \uc0\u1670 \u1575 \u1608 \u1604 </h3>\
+        <p>Price: \uc0\u8360  5200 / quintal</p>\
+      </div>\
+      <div class="card">\
+        <img src="https://cdn.pixabay.com/photo/2017/05/03/17/33/corn-2280549_1280.jpg" alt="Corn" />\
+        <h3>Corn | \uc0\u1605 \u1705 \u1574 \u1740 </h3>\
+        <p>Price: \uc0\u8360  4700 / quintal</p>\
+      </div>\
+      <div class="card">\
+        <img src="https://cdn.pixabay.com/photo/2015/03/26/09/47/potatoes-690132_1280.jpg" alt="Potato" />\
+        <h3>Potato | \uc0\u1570 \u1604 \u1608 </h3>\
+        <p>Price: \uc0\u8360  4000 / quintal</p>\
+      </div>\
+    </div>\
+    <hr />\
+    <div style="max-width: 400px; margin: 30px auto; background:#eaf5df; padding:20px; border-radius:12px;">\
+      <h3>Sign In | \uc0\u1604 \u1575 \u1711  \u1575 \u1606  \u1705 \u1585 \u1740 \u1722 </h3>\
+      <form id="signin-form" novalidate>\
+        <label for="username">Username | \uc0\u1589 \u1575 \u1585 \u1601  \u1606 \u1575 \u1605 </label>\
+        <input type="text" id="username" name="username" placeholder="Username" required />\
+        <label for="password">Password | \uc0\u1662 \u1575 \u1587  \u1608 \u1585 \u1672 </label>\
+        <input type="password" id="password" name="password" placeholder="Password" required />\
+        <button type="submit">Sign In | \uc0\u1604 \u1575 \u1711  \u1575 \u1606  \u1705 \u1585 \u1740 \u1722 </button>\
+        <p id="signin-msg" class="message" role="alert"></p>\
+      </form>\
+    </div>\
+  </section>\
+\
+  <!-- Agri Tools -->\
+  <section id="tools" tabindex="0">\
+    <h2>Agri Tools & Prices | \uc0\u1586 \u1585 \u1593 \u1740  \u1570 \u1604 \u1575 \u1578  \u1575 \u1608 \u1585  \u1602 \u1740 \u1605 \u1578 \u1740 \u1722 </h2>\
+    <div class="grid">\
+      <div class="card">\
+        <img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/tractor-1992524_1280.jpg" alt="Tractor" />\
+        <h3>Tractor | \uc0\u1657 \u1585 \u1740 \u1705 \u1657 \u1585 </h3>\
+        <p>Price: \uc0\u8360  2,500,000</p>\
+      </div>\
+      <div class="card">\
+        <img src="https://cdn.pixabay.com/photo/2017/08/07/06/17/plough-2596996_1280.jpg" alt="Plough" />\
+        <h3>Plough | \uc0\u1729 \u1604 </h3>\
+        <p>Price: \uc0\u8360  30,000</p>\
+      </div>\
+      <div class="card">\
+        <img src="https://cdn.pixabay.com/photo/2016/07/12/11/04/harvester-1502469_1280.jpg" alt="Harvester" />\
+        <h3>Harvester | \uc0\u1729 \u1575 \u1585 \u1608 \u1740 \u1587 \u1657 \u1585 </h3>\
+        <p>Price: \uc0\u8360  1,200,000</p>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- AI Features -->\
+  <section id="ai" tabindex="0">\
+    <h2>AI Features | \uc0\u1605 \u1589 \u1606 \u1608 \u1593 \u1740  \u1584 \u1729 \u1575 \u1606 \u1578 </h2>\
+    <ul style="max-width: 600px; margin: auto; padding-left: 20px;">\
+      <li>\uc0\u9728 \u65039  <strong>Weather Prediction:</strong> Accurate localized forecasts for irrigation and harvest planning.</li>\
+      <li>\uc0\u55357 \u57057 \u65039  <strong>Pest & Disease Detection:</strong> Early identification using image recognition.</li>\
+      <li>\uc0\u55357 \u56487  <strong>Resource Optimization:</strong> AI-driven fertilizer and water recommendations.</li>\
+      <li>\uc0\u55357 \u56520  <strong>Market Forecasting:</strong> Price predictions to maximize profits.</li>\
+    </ul>\
+  </section>\
+\
+  <!-- Sell Crops -->\
+  <section id="sell" tabindex="0">\
+    <h2>Sell Your Crops | \uc0\u1575 \u1662 \u1606 \u1740  \u1601 \u1589 \u1604  \u1601 \u1585 \u1608 \u1582 \u1578  \u1705 \u1585 \u1740 \u1722 </h2>\
+    <form id="sell-form" novalidate style="max-width:400px; margin:auto;">\
+      <label for="crop-name">Crop Name | \uc0\u1601 \u1589 \u1604  \u1705 \u1575  \u1606 \u1575 \u1605 </label>\
+      <input type="text" id="crop-name" name="crop-name" required placeholder="\uc0\u1605 \u1579 \u1604 \u1575 \u1611 : \u1711 \u1606 \u1583 \u1605 " />\
+      <label for="quantity">Quantity (quintals) | \uc0\u1605 \u1602 \u1583 \u1575 \u1585  (\u1705 \u1608 \u1574 \u1606 \u1657 \u1604 )</label>\
+      <input type="number" id="quantity" name="quantity" required min="1" placeholder="\uc0\u1605 \u1579 \u1604 \u1575 \u1611 : 10" />\
+      <label for="contact">Contact Number | \uc0\u1585 \u1575 \u1576 \u1591 \u1729  \u1606 \u1605 \u1576 \u1585 </label>\
+      <input type="tel" id="contact" name="contact" required pattern="[0-9]\{10,13\}" placeholder="03001234567" />\
+      <button type="submit">Submit | \uc0\u1580 \u1605 \u1593  \u1705 \u1585 \u1740 \u1722 </button>\
+      <p id="sell-msg" class="message" role="alert"></p>\
+    </form>\
+  </section>\
+\
+  <!-- About -->\
+  <section id="about" tabindex="0">\
+    <h2>About AgriSmart | \uc0\u1575 \u1740 \u1711 \u1585 \u1740  \u1587 \u1605 \u1575 \u1585 \u1657  \u1705 \u1746  \u1576 \u1575 \u1585 \u1746  \u1605 \u1740 \u1722 </h2>\
+    <p style="max-width:700px; margin:auto; line-height:1.5;">\
+      AgriSmart \uc0\u1575 \u1740 \u1705  \u1580 \u1583 \u1740 \u1583  \u1575 \u1740 \u1662  \u1729 \u1746  \u1580 \u1608  \u1705 \u1587 \u1575 \u1606 \u1608 \u1722  \u1705 \u1740  \u1605 \u1583 \u1583  \u1705 \u1746  \u1604 \u1740 \u1746  \u1576 \u1606 \u1575 \u1574 \u1740  \u1711 \u1574 \u1740  \u1729 \u1746 \u1748  \u1740 \u1729  \u1576 \u1740 \u1580 \u1608 \u1722  \u1705 \u1740  \u1602 \u1740 \u1605 \u1578 \u1740 \u1722 \u1548  \u1586 \u1585 \u1593 \u1740  \u1570 \u1604 \u1575 \u1578 \u1548  \u1575 \u1608 \u1585  \u1605 \u1589 \u1606 \u1608 \u1593 \u1740  \u1584 \u1729 \u1575 \u1606 \u1578  \u1705 \u1740  \u1605 \u1583 \u1583  \u1587 \u1746  \u1576 \u1729 \u1578 \u1585 \u1740 \u1606  \u1586 \u1585 \u1575 \u1593 \u1578 \u1740  \u1601 \u1740 \u1589 \u1604 \u1746  \u1705 \u1585 \u1606 \u1746  \u1605 \u1740 \u1722  \u1605 \u1583 \u1583  \u1583 \u1740 \u1578 \u1740  \u1729 \u1746 \u1748   \
+      \uc0\u1729 \u1605  \u1705 \u1587 \u1575 \u1606 \u1608 \u1722  \u1662 \u1585  \u1575 \u1593 \u1578 \u1605 \u1575 \u1583  \u1575 \u1608 \u1585  \u1575 \u1740 \u1605 \u1575 \u1606  \u1585 \u1705 \u1726 \u1578 \u1746  \u1729 \u1740 \u1722  \u1705 \u1729  \u1580 \u1583 \u1740 \u1583  \u1657 \u1740 \u1705 \u1606 \u1575 \u1604 \u1608 \u1580 \u1740  \u1705 \u1746  \u1584 \u1585 \u1740 \u1593 \u1746  \u1729 \u1605  \u1605 \u1604 \u1705  \u1705 \u1740  \u1586 \u1585 \u1593 \u1740  \u1578 \u1585 \u1602 \u1740  \u1605 \u1740 \u1722  \u1575 \u1729 \u1605  \u1705 \u1585 \u1583 \u1575 \u1585  \u1575 \u1583 \u1575  \u1705 \u1585  \u1587 \u1705 \u1578 \u1746  \u1729 \u1740 \u1722 \u1748   \
+      \uc0\u1729 \u1605 \u1575 \u1585 \u1575  \u1605 \u1602 \u1589 \u1583  \u1705 \u1587 \u1575 \u1606 \u1608 \u1722  \u1705 \u1608  \u1580 \u1583 \u1740 \u1583  \u1605 \u1593 \u1604 \u1608 \u1605 \u1575 \u1578  \u1601 \u1585 \u1575 \u1729 \u1605  \u1705 \u1585 \u1606 \u1575  \u1575 \u1608 \u1585  \u1575 \u1606  \u1705 \u1740  \u1605 \u1581 \u1606 \u1578  \u1705 \u1608  \u1586 \u1740 \u1575 \u1583 \u1729  \u1605 \u1606 \u1575 \u1601 \u1593  \u1576 \u1582 \u1588  \u1576 \u1606 \u1575 \u1606 \u1575  \u1729 \u1746 \u1748 \
+    </p>\
+  </section>\
+</main>\
+\
+<script>\
+  // \uc0\u1606 \u1740 \u1608 \u1740 \u1711 \u1740 \u1588 \u1606  \u1705 \u1575 \u1605  \u1705 \u1585 \u1746 \u1548  \u1576 \u1657 \u1606  \u1705 \u1604 \u1705  \u1662 \u1585  \u1605 \u1578 \u1593 \u1604 \u1602 \u1729  \u1587 \u1740 \u1705 \u1588 \u1606  \u1583 \u1705 \u1726 \u1575 \u1574 \u1746 \
+  document.addEventListener('DOMContentLoaded', () => \{\
+    const navLinks = document.querySelectorAll('nav a');\
+    const sections = document.querySelectorAll('main section');\
+\
+    navLinks.forEach(link => \{\
+      link.addEventListener('click', e => \{\
+        e.preventDefault();\
+        // active \uc0\u1705 \u1604 \u1575 \u1587  \u1606 \u1705 \u1575 \u1604 \u1740 \u1722 \
+        navLinks.forEach(l => l.classList.remove('active'));\
+        link.classList.add('active');\
+\
+        const target = link.getAttribute('data-section');\
+        sections.forEach(sec => sec.classList.remove('active'));\
+\
+        const targetSection = document.getElementById(target);\
+        if(targetSection)\{\
+          targetSection.classList.add('active');\
+          targetSection.focus();\
+        \}\
+      \});\
+    \});\
+\
+    // Sign In \uc0\u1601 \u1575 \u1585 \u1605 \
+    const signinForm = document.getElementById('signin-form');\
+    const signinMsg = document.getElementById('signin-msg');\
+\
+    signinForm.addEventListener('submit', e => \{\
+      e.preventDefault();\
+      const username = signinForm.username.value.trim();\
+      const password = signinForm.password.value.trim();\
+\
+      if (!username || !password) \{\
+        signinMsg.style.color = 'red';\
+        signinMsg.textContent = 'Please enter both username and password | \uc0\u1576 \u1585 \u1575 \u1729  \u1705 \u1585 \u1605  \u1583 \u1608 \u1606 \u1608 \u1722  \u1582 \u1575 \u1606 \u1746  \u1662 \u1585  \u1705 \u1585 \u1740 \u1722 \u1748 ';\
+        return;\
+      \}\
+\
+      signinMsg.style.color = 'green';\
+      signinMsg.textContent = `Welcome, $\{username\}! | \uc0\u1582 \u1608 \u1588  \u1570 \u1605 \u1583 \u1740 \u1583 \u1548  $\{username\}\u1748 `;\
+      signinForm.reset();\
+    \});\
+\
+    // Sell \uc0\u1601 \u1575 \u1585 \u1605 \
+    const sellForm = document.getElementById('sell-form');\
+    const sellMsg = document.getElementById('sell-msg');\
+\
+    sellForm.addEventListener('submit', e => \{\
+      e.preventDefault();\
+      const crop = sellForm['crop-name'].value.trim();\
+      const qty = sellForm.quantity.value;\
+      const contact = sellForm.contact.value.trim();\
+\
+Pen Editor Menu\
+\
+User Menu\
+HTML\
+CSS\
+JS\
+Result\
+75 unsaved changes \
+\
+HTML Options\
+      sellMsg.textContent = `Your crop "$\{crop\}" of quantity $\{qty\} quintals has been submitted. | \uc0\u1570 \u1662  \u1705 \u1740  \u1601 \u1589 \u1604  \u1580 \u1605 \u1593  \u1729 \u1608 \u1711 \u1574 \u1740  \u1729 \u1746 \u1748 `;\
+      sellForm.reset();\
+    \});\
+  \});\
+</script>\
+\uc0\u8203 \
+</body>\
+</htmls\
+\
+      if(!crop || !qty || !contact)\{\
+        sellMsg.style.color = 'red';\
+        sellMsg.textContent = 'Please fill all fields correctly | \uc0\u1578 \u1605 \u1575 \u1605  \u1582 \u1575 \u1606 \u1746  \u1589 \u1581 \u1740 \u1581  \u1591 \u1585 \u1740 \u1602 \u1746  \u1587 \u1746  \u1662 \u1585  \u1705 \u1585 \u1740 \u1722 \u1748 ';\
+        return;\
+      \}\
+      sellMsg.style.color = 'green';\
+      sellMsg.textContent = `Your crop "$\{crop\}" of quantity $\{qty\} quintals has been submitted. | \uc0\u1570 \u1662  \u1705 \u1740  \u1601 \u1589 \u1604  \u1580 \u1605 \u1593  \u1729 \u1608 \u1711 \u1574 \u1740  \u1729 \u1746 \u1748 `;\
+      sellForm.reset();\
+    \});\
+  \});\
+</script>\
+\
+</body>\
+</html>\
+\
+}

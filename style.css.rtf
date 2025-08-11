@@ -1,0 +1,294 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\
+\
+/* Reset */\
+* \{\
+  box-sizing: border-box;\
+\}\
+\
+body \{\
+  font-family: 'Roboto', sans-serif;\
+  margin: 0; padding: 0;\
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;\
+  background-size: cover;\
+  color: #1b3a1a;\
+  min-height: 100vh;\
+\}\
+\
+header \{\
+  background: rgba(46, 125, 50, 0.95);\
+  padding: 12px 20px;\
+  color: white;\
+  position: sticky;\
+  top: 0;\
+  z-index: 1000;\
+  display: flex;\
+  align-items: center;\
+  justify-content: space-between;\
+  flex-wrap: wrap;\
+\}\
+\
+nav \{\
+  display: flex;\
+  flex-wrap: wrap;\
+  gap: 12px;\
+\}\
+\
+nav a \{\
+  color: white;\
+  text-decoration: none;\
+  font-weight: 700;\
+  padding: 8px 14px;\
+  border-radius: 6px;\
+  transition: background-color 0.3s ease;\
+  cursor: pointer;\
+\}\
+\
+nav a.active,\
+nav a:hover \{\
+  background-color: #a3d38a;\
+  color: #1b3a1a;\
+\}\
+\
+.welcome-text \{\
+  font-weight: 700;\
+  font-size: 1.2rem;\
+  white-space: nowrap;\
+\}\
+\
+main \{\
+  background: rgba(255, 255, 255, 0.95);\
+  max-width: 1100px;\
+  margin: 30px auto;\
+  border-radius: 12px;\
+  padding: 25px 30px;\
+  box-shadow: 0 0 18px rgba(46, 125, 50, 0.4);\
+  min-height: 70vh;\
+\}\
+\
+section \{\
+  display: none;\
+\}\
+\
+section.active \{\
+  display: block;\
+\}\
+\
+h1, h2, h3 \{\
+  color: #2e7d32;\
+  text-shadow: 1px 1px 3px #8bc34a;\
+\}\
+\
+h1 \{\
+  font-weight: 900;\
+  font-size: 2rem;\
+  margin-bottom: 15px;\
+\}\
+\
+h2 \{\
+  text-align: center;\
+  font-weight: 900;\
+  margin-bottom: 25px;\
+\}\
+\
+/* Grid for cards */\
+.grid \{\
+  display: grid;\
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));\
+  gap: 25px;\
+\}\
+\
+.card \{\
+  background: #f7fff7;\
+  border-radius: 12px;\
+  padding: 18px;\
+  box-shadow: 0 0 10px #a3d38a99;\
+  border: 1px solid #c1d9ac;\
+  text-align: center;\
+  transition: transform 0.2s ease;\
+\}\
+\
+.card:hover \{\
+  transform: translateY(-6px);\
+  box-shadow: 0 0 18px #6aa84fbb;\
+\}\
+\
+.card img \{\
+  width: 100%;\
+  height: 180px;\
+  object-fit: cover;\
+  border-radius: 10px;\
+  margin-bottom: 12px;\
+\}\
+\
+.card h3 \{\
+  margin-bottom: 8px;\
+  font-weight: 700;\
+\}\
+\
+.card p \{\
+  font-weight: 600;\
+  color: #4d662d;\
+\}\
+\
+/* Video container */\
+.video-container \{\
+  max-width: 700px;\
+  margin: 35px auto 0;\
+  border-radius: 15px;\
+  overflow: hidden;\
+  box-shadow: 0 0 20px #8bc34a99;\
+\}\
+\
+video \{\
+  width: 100%;\
+  height: auto;\
+  display: block;\
+\}\
+\
+/* Sign In form */\
+.signin-form-container \{\
+  max-width: 400px;\
+  background: #eaf5df;\
+  border: 2px solid #8bc34a;\
+  padding: 20px 25px;\
+  border-radius: 15px;\
+  box-shadow: 0 0 12px #6aa84fbb;\
+  margin: 0 auto 30px;\
+\}\
+\
+.signin-form-container h2 \{\
+  margin-bottom: 18px;\
+  font-weight: 900;\
+\}\
+\
+form label \{\
+  font-weight: 700;\
+  display: block;\
+  margin-bottom: 6px;\
+  color: #2e7d32;\
+\}\
+\
+form input \{\
+  width: 100%;\
+  padding: 10px 12px;\
+  margin-bottom: 18px;\
+  border-radius: 10px;\
+  border: 1.7px solid #a3d38a;\
+  font-size: 1rem;\
+  outline-color: #6aa84f;\
+\}\
+\
+form button \{\
+  background: #4caf50;\
+  border: none;\
+  color: white;\
+  font-weight: 700;\
+  font-size: 1.15rem;\
+  padding: 12px;\
+  border-radius: 10px;\
+  cursor: pointer;\
+  width: 100%;\
+  transition: background-color 0.3s ease;\
+\}\
+\
+form button:hover \{\
+  background: #81c784;\
+\}\
+\
+.message \{\
+  font-weight: 700;\
+  margin-top: 12px;\
+  text-align: center;\
+\}\
+\
+/* AI Feature list */\
+#ai ul \{\
+  list-style: none;\
+  max-width: 700px;\
+  margin: 0 auto;\
+  padding: 0;\
+\}\
+\
+#ai ul li \{\
+  background: #dcedc8;\
+  margin: 12px 0;\
+  padding: 12px 18px;\
+  border-left: 6px solid #8bc34a;\
+  font-weight: 600;\
+  font-size: 1.1rem;\
+  color: #33691e;\
+  border-radius: 6px;\
+  box-shadow: 1px 1px 4px #a3d38aaa;\
+\}\
+\
+/* Sell form */\
+#sell form \{\
+  max-width: 450px;\
+  margin: 0 auto;\
+\}\
+\
+#sell label \{\
+  font-weight: 700;\
+  color: #2e7d32;\
+  display: block;\
+  margin-bottom: 6px;\
+\}\
+\
+#sell input \{\
+  width: 100%;\
+  padding: 10px 8px;\
+  border-radius: 8px;\
+  border: 1.5px solid #a3d38a;\
+  margin-bottom: 15px;\
+  font-size: 1rem;\
+  outline-color: #6aa84f;\
+\}\
+\
+#sell button \{\
+  background: #4caf50;\
+  border: none;\
+  color: white;\
+  padding: 12px 20px;\
+  font-size: 1.15rem;\
+  font-weight: 700;\
+  border-radius: 8px;\
+  cursor: pointer;\
+  width: 100%;\
+  transition: background-color 0.3s ease;\
+\}\
+\
+#sell button:hover \{\
+  background: #81c784;\
+\}\
+\
+/* About */\
+#about p \{\
+  font-size: 1.1rem;\
+  max-width: 850px;\
+  margin: 0 auto;\
+  line-height: 1.7;\
+  color: #3a5d1a;\
+  font-weight: 600;\
+  text-align: justify;\
+\}\
+\
+/* Responsive */\
+@media (max-width: 700px) \{\
+  nav \{\
+    justify-content: center;\
+  \}\
+  .welcome-text \{\
+    font-size: 1rem;\
+    margin-top: 8px;\
+    flex-basis: 100%;\
+    text-align: center;\
+  \}\
+\}\
+}
